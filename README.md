@@ -53,7 +53,7 @@ Intent-based LLM router in Node.js that classifies user requests and routes them
 ## Requirements
 
 - Node.js 20+
-- OpenAI API key
+- Google Gemini API key (or OpenAI key for dual-compatibility)
 
 ## Setup
 
@@ -66,9 +66,9 @@ npm install
 2. Create `.env`:
 
 ```env
-OPENAI_API_KEY=your_key_here
-CLASSIFIER_MODEL=gpt-4o-mini
-GENERATOR_MODEL=gpt-4o-mini
+OPENAI_API_KEY=your_gemini_key_here
+CLASSIFIER_MODEL=gemini-2.5-flash
+GENERATOR_MODEL=gemini-2.5-flash
 INTENT_CONFIDENCE_THRESHOLD=0.7
 ```
 
